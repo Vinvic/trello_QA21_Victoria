@@ -56,4 +56,19 @@ public class TestBase {
 
 
     }
+
+    public void fillBoardCreationForm(String boardName, String qa) {
+         type(By.cssSelector("[data-test-id='header-create-board-title-input']"),boardName);
+         click(By.cssSelector("[data-test-id='header-create-board-submit-button']"));
+
+     }
+
+    public void selectCreateBoardFromDropDown() {
+         click(By.cssSelector("[data-test-id='header-create-board-button']"));
+     }
+
+    public void clickOnPlusButtonOnHeader() {
+         click(By.cssSelector("[data-test-id='header-create-menu-button']"));
+
+     }
 }
